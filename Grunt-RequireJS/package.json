@@ -1,0 +1,16 @@
+{
+  "name": "grunt-requirejs-exercise",
+  "version": "1.0.0",
+  "description": "One of Front-end meeting of Capgemini",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grunt",
+    "requirejs",
+    ".net"
+  ],
+  "author": "Meilan",
+  "license": "ISC"
+}

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grunt-RequireJS", "Grunt-RequireJS\Grunt-RequireJS.csproj", "{2061F770-C97A-4029-8BF8-E08F53455D62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grunt-RequireJS.Tests", "Grunt-RequireJS.Tests\Grunt-RequireJS.Tests.csproj", "{2126022E-D8B4-4A41-8F02-CA38D5248896}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{BBF1A6DA-C9E5-4A02-A275-0518EAAF4ADD}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
+		PublishScripts\Publish-WebApplicationVM.ps1 = PublishScripts\Publish-WebApplicationVM.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{766742E5-B79D-47E6-A95E-7BC563F52394}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\Grunt-RequireJS-WAWS-dev.json = PublishScripts\Configurations\Grunt-RequireJS-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2061F770-C97A-4029-8BF8-E08F53455D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2061F770-C97A-4029-8BF8-E08F53455D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2061F770-C97A-4029-8BF8-E08F53455D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2061F770-C97A-4029-8BF8-E08F53455D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2126022E-D8B4-4A41-8F02-CA38D5248896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2126022E-D8B4-4A41-8F02-CA38D5248896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2126022E-D8B4-4A41-8F02-CA38D5248896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2126022E-D8B4-4A41-8F02-CA38D5248896}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{766742E5-B79D-47E6-A95E-7BC563F52394} = {BBF1A6DA-C9E5-4A02-A275-0518EAAF4ADD}
+	EndGlobalSection
+EndGlobal
