@@ -183,9 +183,11 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ui_src\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="grunt.config.js" />
+    <Content Include="Gruntfile.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="package.json" />
@@ -202,6 +204,37 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="ui_dist\js\app.js" />
+    <Content Include="ui_dist\js\build.txt" />
+    <Content Include="ui_dist\js\common\common.js" />
+    <Content Include="ui_dist\js\modules\aboutpage\main.js" />
+    <Content Include="ui_dist\js\modules\contactpage\main.js" />
+    <Content Include="ui_dist\js\modules\frontpage\main.js" />
+    <Content Include="ui_dist\js\pagetypes\about-page.js" />
+    <Content Include="ui_dist\js\pagetypes\contact-page.js" />
+    <Content Include="ui_dist\js\pagetypes\front-page.js" />
+    <Content Include="ui_dist\js\vendor\bootstrap.js" />
+    <Content Include="ui_dist\js\vendor\jquery.js" />
+    <Content Include="ui_dist\js\vendor\require.js" />
+    <Content Include="ui_src\js\app.js" />
+    <Content Include="ui_src\js\common\common.js" />
+    <Content Include="ui_src\js\modules\aboutpage\about__collection.js" />
+    <Content Include="ui_src\js\modules\aboutpage\about__controller.js" />
+    <Content Include="ui_src\js\modules\aboutpage\about__model.js" />
+    <Content Include="ui_src\js\modules\aboutpage\about__view.js" />
+    <Content Include="ui_src\js\modules\contactpage\contact__collection.js" />
+    <Content Include="ui_src\js\modules\contactpage\contact__view.js" />
+    <Content Include="ui_src\js\modules\frontpage\frontpage__controller.js" />
+    <Content Include="ui_src\js\modules\frontpage\frontpage__model.js" />
+    <Content Include="ui_src\js\modules\frontpage\frontpage__collection.js" />
+    <Content Include="ui_src\js\modules\frontpage\frontpage__view.js" />
+    <Content Include="ui_src\js\pagetypes\about-page.js" />
+    <Content Include="ui_src\js\pagetypes\contact-page.js" />
+    <Content Include="ui_src\js\pagetypes\front-page.js" />
+    <Content Include="ui_src\js\pagetypes\product-page.js" />
+    <Content Include="ui_src\js\vendor\bootstrap.js" />
+    <Content Include="ui_src\js\vendor\jquery.js" />
+    <Content Include="ui_src\js\vendor\require.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -236,14 +269,30 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Product.cshtml" />
+    <Content Include="ui_src\sass\app.scss" />
+    <Content Include="ui_src\sass\components\_product.scss" />
+    <Content Include="ui_src\sass\components\_contact.scss" />
+    <Content Include="ui_src\sass\general\_form.scss" />
+    <Content Include="ui_src\sass\general\_helper.scss" />
+    <Content Include="ui_src\sass\settings\_colors.scss" />
+    <Content Include="ui_src\sass\settings\_fonts.scss" />
+    <Content Include="ui_src\sass\general\_container.scss" />
+    <Content Include="ui_src\sass\mixins\_media-query.scss" />
+    <Content Include="ui_src\sass\mixins\_triangle.scss" />
+    <Content Include="ui_src\sass\components\_all.scss" />
+    <Content Include="ui_src\sass\settings\_all.scss" />
+    <Content Include="ui_src\sass\general\_all.scss" />
+    <Content Include="ui_src\sass\mixins\_all.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ui_src\img\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="ui_src\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="ui_src\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="ui_src\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
