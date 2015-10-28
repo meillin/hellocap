@@ -3,7 +3,8 @@ requirejs.config({
     baseUrl: 'ui_src/js',
     paths: {
         'jquery': 'vendor/jquery',
-        'bootstrap': 'vendor/bootstrap'
+        'bootstrap': 'vendor/bootstrap',
+        'knockout': 'vendor/knockout-3.3.0'
     },
     shim: {
         'bootstrap': ['jquery']

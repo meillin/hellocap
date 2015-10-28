@@ -3,12 +3,23 @@
 @{
     ViewBag.Title = "Product";
 }
+<div class="product">
+    <div class="jumbotron">
+        <h1>PRODUCT</h1>
+    </div>
 
-<div class="jumbotron">
-    <h1>PRODUCT</h1>
+    <div class="row" data-bind="foreach: items">
+        <div class="col-sm-3">
+            <ul class="product--item">
+                <li><img data-bind="attr:{src: img}" /></li>
+                <li><h3 data-bind="text: name"></h3></li>
+                <li data-bind="text: price"></li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <p>Use this area to provide additional information.</p>
 </div>
-
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
-<p>Use this area to provide additional information.</p>
