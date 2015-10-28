@@ -4,7 +4,5 @@
     'modules/frontpage/frontpage__controller',
     'modules/contactpage/contact__view'
 ], function () {
-    $('.intro').html('jquery is included');
-
     console.log('frontpage view loaded');
 });

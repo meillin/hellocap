@@ -4,7 +4,6 @@
     'modules/aboutpage/about__controller',
     'modules/aboutpage/about__model'
 ], function ($) {
-    $('.jumbotron').html('jquery is included');
-
+    $('intro').append('jquery is loaded and used');
     console.log('about page view loaded');
 });
