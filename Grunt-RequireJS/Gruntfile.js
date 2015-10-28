@@ -27,13 +27,19 @@ module.exports = function (grunt) {
 
         compass: { // Task
             dev: { // target
-                options: opt.compassOptions('dev')
+                options: {
+                    config: 'config.rb',
+                    outputStyle: 'expanded'
+                }
             },
             dist: { // Another Target
-                options: opt.compassOptions('dist')
+                options: {
+                    config: 'config.rb',
+                    outputStyle: 'compressed'
+                },
             }
         },
-        
+
         // Minify js files
         uglify: {
             options: {
@@ -48,10 +54,13 @@ module.exports = function (grunt) {
 
         // Copy any files
         copy: {
-            src: ['<%= config.dev %>/js/require.js'],
-            dest: '<%= config.dist %>/js'
+            build: {
+                files: [
+                    {expand: true, flatten: true, src: ['<%= config.dev %>/fonts/*'], dest: '<%= config.dist %>/fonts/', filter: 'isFile' }
+                ]
+            }
         },
-    
+
         // Clean folder or files
         clean: {
             build: {
@@ -89,8 +98,8 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('default', ['dev']);
-    grunt.registerTask('dev', ['clean', 'jshint', 'compass:dev', 'requirejs:dev', 'watch']);
-    grunt.registerTask('dist', ['clean', 'jshint', 'compass:dist', 'requirejs:dist']);
+    grunt.registerTask('dev', ['clean', 'copy', 'jshint', 'compass:dev', 'requirejs:dev', 'watch']);
+    grunt.registerTask('dist', ['clean', 'copy', 'jshint', 'compass:dist', 'requirejs:dist']);
 
     /*
     grunt.registerTask('dev', 'build process for development', function () {

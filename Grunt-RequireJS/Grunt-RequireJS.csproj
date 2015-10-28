@@ -191,6 +191,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="package.json" />
+    <Content Include="config.rb" />
     <None Include="Properties\PublishProfiles\hellocap.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -204,18 +205,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="ui_dist\js\app.js" />
-    <Content Include="ui_dist\js\build.txt" />
-    <Content Include="ui_dist\js\common\common.js" />
-    <Content Include="ui_dist\js\modules\aboutpage\main.js" />
-    <Content Include="ui_dist\js\modules\contactpage\main.js" />
-    <Content Include="ui_dist\js\modules\frontpage\main.js" />
-    <Content Include="ui_dist\js\pagetypes\about-page.js" />
-    <Content Include="ui_dist\js\pagetypes\contact-page.js" />
-    <Content Include="ui_dist\js\pagetypes\front-page.js" />
-    <Content Include="ui_dist\js\vendor\bootstrap.js" />
-    <Content Include="ui_dist\js\vendor\jquery.js" />
-    <Content Include="ui_dist\js\vendor\require.js" />
     <Content Include="ui_src\js\app.js" />
     <Content Include="ui_src\js\common\common.js" />
     <Content Include="ui_src\js\modules\aboutpage\about__collection.js" />
@@ -228,6 +217,8 @@
     <Content Include="ui_src\js\modules\frontpage\frontpage__model.js" />
     <Content Include="ui_src\js\modules\frontpage\frontpage__collection.js" />
     <Content Include="ui_src\js\modules\frontpage\frontpage__view.js" />
+    <Content Include="ui_src\js\modules\product\product__collection.js" />
+    <Content Include="ui_src\js\modules\product\product__view.js" />
     <Content Include="ui_src\js\pagetypes\about-page.js" />
     <Content Include="ui_src\js\pagetypes\contact-page.js" />
     <Content Include="ui_src\js\pagetypes\front-page.js" />
@@ -287,6 +278,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ui_dist\" />
     <Folder Include="ui_src\img\" />
   </ItemGroup>
   <ItemGroup>

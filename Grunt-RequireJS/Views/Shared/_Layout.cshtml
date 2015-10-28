@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application with Grunt and RequireJS</title>
 
-    @Styles.Render("~/Content/css")
-    <!--
-    @Scripts.Render("~/bundles/modernizr")
-    -->
-
+    <link href="~/ui_dist/css/app.css" rel="stylesheet" />
+    <script src="~/ui_src/js/vendor/modernizr-2.6.2.js"></script>
 
 </head>
 <body>
@@ -21,6 +18,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <i class="fa fa-hand-spock-o fa-3x white left logo"></i>
                 @Html.ActionLink("HELLO CAP", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
@@ -41,12 +39,7 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-    <script src="~/ui_dist/js/vendor/require.js"></script>
-
-    <script type="text/javascript">
-        require(['/ui_dist/js/app.js']);
-    </script>
-
+    <script data-main="../ui_dist/js/app.js" src="~/ui_dist/js/vendor/require.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

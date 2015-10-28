@@ -1,3 +1,3 @@
 ﻿define([
-	'modules/pagetypes/frontpage__view'
+	'modules/product/product__view'
 ]);
