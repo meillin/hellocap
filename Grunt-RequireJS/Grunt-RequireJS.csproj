@@ -226,6 +226,7 @@
     <Content Include="ui_src\js\pagetypes\product-page.js" />
     <Content Include="ui_src\js\vendor\bootstrap.js" />
     <Content Include="ui_src\js\vendor\jquery.js" />
+    <Content Include="ui_src\js\vendor\knockout-3.3.0.js" />
     <Content Include="ui_src\js\vendor\modernizr-2.6.2.js" />
     <Content Include="ui_src\js\vendor\require.js" />
     <Content Include="Web.config" />
@@ -271,12 +272,12 @@
     <Content Include="ui_src\sass\settings\_colors.scss" />
     <Content Include="ui_src\sass\settings\_fonts.scss" />
     <Content Include="ui_src\sass\general\_container.scss" />
-    <Content Include="ui_src\sass\mixins\_media-query.scss" />
-    <Content Include="ui_src\sass\mixins\_triangle.scss" />
+    <Content Include="ui_src\sass\font-awesome\mixins\_media-query.scss" />
+    <Content Include="ui_src\sass\font-awesome\mixins\_triangle.scss" />
     <Content Include="ui_src\sass\components\_all.scss" />
     <Content Include="ui_src\sass\settings\_all.scss" />
     <Content Include="ui_src\sass\general\_all.scss" />
-    <Content Include="ui_src\sass\mixins\_all.scss" />
+    <Content Include="ui_src\sass\font-awesome\mixins\_all.scss" />
     <Content Include="ui_src\sass\font-awesome\_font-awesome.scss" />
     <Content Include="ui_src\sass\font-awesome\_animated.scss" />
     <Content Include="ui_src\sass\font-awesome\_bordered-pulled.scss" />
@@ -297,6 +298,10 @@
     <Content Include="ui_src\fonts\FontAwesome.otf" />
     <Content Include="ui_src\sass\vendor\_bootstrap.scss" />
     <Content Include="ui_src\sass\general\_base.scss" />
+    <Content Include="ui_src\sass\components\_list.scss" />
+    <Content Include="ui_src\sass\mixins\_all.scss" />
+    <Content Include="ui_src\sass\mixins\_media-query.scss" />
+    <Content Include="ui_src\sass\mixins\_triangle.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -307,7 +312,9 @@
     <Content Include="ui_src\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="ui_src\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="ui_src\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
